@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ArithmeticProgram</string>
+    <string-array name="operations">
+        <item>Addition</item>
+        <item>Subtraction</item>
+        <item>Multiplication</item>
+        <item>Division</item>
+        <item>Modulus</item>
+    </string-array>
+</resources>
