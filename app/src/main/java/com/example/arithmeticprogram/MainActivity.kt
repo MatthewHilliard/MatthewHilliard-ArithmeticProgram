@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.math.ceil
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 val toast = Toast.makeText(this, "Second Input is Blank", Toast.LENGTH_SHORT)
                 toast.show()
             }
-            else if((numberTwo.text.toString().toDouble() - 0.000000000001) < 0 && currOperation == operations[3]){
+            else if(numberTwo.text.toString().toDouble() >= 0 && (numberTwo.text.toString().toDouble() - 0.000000000001) < 0 && currOperation == operations[3]){
                 val toast = Toast.makeText(this, "Cannot Divide by Zero", Toast.LENGTH_SHORT)
                 toast.show()
             }
